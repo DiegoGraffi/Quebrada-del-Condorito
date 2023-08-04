@@ -32,12 +32,12 @@ const Navbar = () => {
 
         <div className="hidden lg:flex lg:justify-between lg:items-center">
           <ul className="flex gap-[60px]">
-            <Link href="/#hero">
+            <Link href="/">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Inicio
               </li>
             </Link>
-            <Link href="/nuestra-historia">
+            <Link href="/conservacion">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Conservación
               </li>
@@ -86,7 +86,7 @@ const Navbar = () => {
             </div>
             <ul className="flex flex-col gap-[15px] px-[25px] bg-white">
               <Link
-                href="/#hero"
+                href="/"
                 className="flex justify-center border-b-[1px] border-black pb-3 border-opacity-50"
               >
                 <li className="font-raleway font-[400] text-grisAzul">
@@ -94,7 +94,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link
-                href="/nuestra-historia"
+                href="/conservacion"
                 className="flex justify-center border-b-[1px] border-black pb-3 border-opacity-50"
               >
                 <li className="font-raleway font-[400] text-grisAzul">

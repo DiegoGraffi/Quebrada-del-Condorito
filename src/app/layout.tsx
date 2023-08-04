@@ -1,9 +1,8 @@
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
 import { Josefin_Sans } from "next/font/google";
-import localFont from "next/font/local";
+import Footer from "@/components/Footer";
 
 export const dynamic = "force-dynamic";
 
@@ -23,9 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={`${josefin_sans.className} ${josefin_sans.variable}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
