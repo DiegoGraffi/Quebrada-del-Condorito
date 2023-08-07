@@ -42,7 +42,7 @@ const Navbar = () => {
                 Conservación
               </li>
             </Link>
-            <Link href="/#courses">
+            <Link href="/actividades">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Actividades
               </li>
@@ -102,7 +102,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link
-                href="/#courses"
+                href="/actividades"
                 className="flex justify-center border-b-[1px] border-black pb-3 border-opacity-50"
               >
                 <li className="font-raleway font-[400] text-grisAzul">
