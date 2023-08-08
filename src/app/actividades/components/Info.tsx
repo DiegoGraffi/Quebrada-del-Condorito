@@ -38,8 +38,8 @@ const Info = () => {
           </ul>
 
           <Link href="../../mapa">
-            <button className="group p-[1.5rem] border-2 border-black w-full mt-[2rem] hover:bg-black transition-all duration-200 ease-in-out">
-              <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
+            <button className="group text-[.8rem] p-[1rem] border-2 border-black w-full md:w-auto mt-[2rem] hover:bg-black transition-all duration-200 ease-in-out">
+              <p className="uppercase font-[500] group-hover:text-white transition-all duration-200 ease-in-out">
                 Mapa del área protegida
               </p>
             </button>

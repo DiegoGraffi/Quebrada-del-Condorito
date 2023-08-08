@@ -29,8 +29,8 @@ const page = () => {
             download="Parque Nacional Quebrada del Condorito"
             className="w-[100%] md:w-[50%]"
           >
-            <button className="group w-full border-2 border-black p-[1rem] my-[3rem] hover:bg-black transition-all duration-200 ease-in-out">
-              <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
+            <button className="group w-full border-2 border-black text-[.8rem] p-[1rem] my-[3rem] hover:bg-black transition-all duration-200 ease-in-out">
+              <p className="uppercase font-[500] group-hover:text-white transition-all duration-200 ease-in-out">
                 Descargar archivo KML
               </p>
             </button>
@@ -59,8 +59,8 @@ const page = () => {
             href="https://sib.gob.ar/archivos/Mapas_Google_de_APN.pdf"
             target="_blank"
           >
-            <button className="group w-full border-2 border-black p-[1rem] my-[3rem] hover:bg-black transition-all duration-200 ease-in-out">
-              <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
+            <button className="group w-full border-2 border-black text-[.8rem] p-[1rem] my-[3rem] hover:bg-black transition-all duration-200 ease-in-out">
+              <p className="uppercase font-[500] group-hover:text-white transition-all duration-200 ease-in-out">
                 Instructivo
               </p>
             </button>

@@ -48,8 +48,8 @@ const Info = () => {
         href="https://infoclima.com/pronosticos/argentina/cordoba/pampa-de-achala-_-el-condor/extendido/"
         target="_blank"
       >
-        <button className="group p-[1.5rem] border-2 border-black w-full mt-[1rem] mb-[5rem] hover:bg-black transition-all duration-200 ease-in-out">
-          <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
+        <button className="group text-[.8rem] p-[1rem] border-2 border-black w-full md:w-auto mt-[1rem] mb-[5rem] hover:bg-black transition-all duration-200 ease-in-out">
+          <p className="uppercase font-[500] group-hover:text-white transition-all duration-200 ease-in-out">
             Consulte el clima
           </p>
         </button>

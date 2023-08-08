@@ -8,6 +8,7 @@ import Image1 from "../../../../public/images/patrimonio/1.jpg";
 import Image2 from "../../../../public/images/patrimonio/2.jpg";
 import Image3 from "../../../../public/images/patrimonio/3.jpg";
 import Image4 from "../../../../public/images/patrimonio/4.jpg";
+import Link from "next/link";
 
 const Patrimonio = () => {
   const params = {
@@ -105,6 +106,19 @@ const Patrimonio = () => {
             />
           </div>
         </Swiper>
+      </div>
+      <div className="max-w-[500px] mx-auto mt-[2rem] px-[25px]">
+        <Link
+          href="http://www.quebradadelcondorito.ar/pesca/"
+          className="w-full"
+        >
+          <button className="group p-[1rem] w-full border-2 border-black hover:bg-black transition-all duration-200 ease-in-out">
+            <p className="uppercase font-[500] text-[.8rem] group-hover:text-white transition-all duration-200 ease-in-out">
+              Conocé mas información técnica en el sistema de información de
+              biodiversidad
+            </p>
+          </button>
+        </Link>
       </div>
     </section>
   );
