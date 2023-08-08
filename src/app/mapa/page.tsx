@@ -4,8 +4,8 @@ import Link from "next/link";
 const page = () => {
   return (
     <section>
-      <div className="flex flex-col justify-center items-center">
-        <h3 className="text-[3rem] font-bold uppercase pt-[10rem]">
+      <div className="flex flex-col justify-center items-center px-[25px]">
+        <h3 className="uppercase text-[1rem] md:text-[1.5rem]  font-bold pt-[6rem] md:pt-[10rem]">
           Mapa del área protegida
         </h3>
         <div className="max-w-[600px] mx-auto flex flex-col items-center">
@@ -27,7 +27,7 @@ const page = () => {
           <a
             href="../../../public/Parque+Nacional+Quebrada+del+Condorito.kml"
             download="Parque Nacional Quebrada del Condorito"
-            className="w-[50%]"
+            className="w-[100%] md:w-[50%]"
           >
             <button className="group w-full border-2 border-black p-[1rem] my-[3rem] hover:bg-black transition-all duration-200 ease-in-out">
               <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
@@ -37,11 +37,10 @@ const page = () => {
           </a>
         </div>
 
-        <div className="border-2 border-black mx-auto">
+        <div className="border-2 border-black w-full">
           <iframe
             src="https://www.google.com/maps/d/embed?mid=1FX1jmSalj2oF2leRIpYnSSZBxN1yRBDS"
-            width="1200"
-            height="700"
+            className="w-full aspect-square"
           ></iframe>
         </div>
 

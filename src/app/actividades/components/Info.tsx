@@ -15,7 +15,7 @@ const Info = () => {
     <section className="overflow-hidden">
       <div className=" mt-[3rem] md:mt-[5rem] px-[25px]">
         <div className="max-w-[900px] mx-auto">
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] font-bold">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Horarios de ingreso
           </h3>
           <p className="font-bold text-[.8rem] md:text-[1rem]">
@@ -45,11 +45,11 @@ const Info = () => {
             </button>
           </Link>
 
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] font-bold mt-[2rem] md:mt-[3rem]">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Sitios para visitar y actividades
           </h3>
 
-          <ul className="list-disc list-inside mt-[1rem] text-[.8rem] md:text-[1rem] flex flex-col gap-4">
+          <ul className="list-disc list-inside mt-[1rem] text-[.8rem] md:text-[1rem] flex flex-col gap-4 text-justify">
             <li>
               <span className="font-bold">Balcón Norte</span> (con senderos
               interpretativos), bajada al{" "}
@@ -86,11 +86,11 @@ const Info = () => {
         </div>
 
         <div className="max-w-[900px] mx-auto">
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] font-bold">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Registro obligatorio
           </h3>
 
-          <p className="text-[.8rem] md:text-[1rem]">
+          <p className="text-[.8rem] md:text-[1rem] text-justify">
             Para acceder sin guía al Balcón Norte y/o el Río de los Condoritos
             es necesario completar un registro obligatorio.
             <br />
@@ -111,11 +111,11 @@ const Info = () => {
             lo guardará. Por último, presioná guardar y confirmar.
           </p>
 
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] mt-[2rem] md:mt-[3rem] font-bold">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Guías
           </h3>
 
-          <p className="text-[.8rem] md:text-[1rem]">
+          <p className="text-[.8rem] md:text-[1rem] text-justify">
             Para acceder al Balcón Sur o hacer trekking a campo traviesa tenés
             que contratar previo a la visita una excursión con guía habilitado.
             <br />
@@ -131,10 +131,10 @@ const Info = () => {
         <div className="max-w-[900px] mx-auto flex flex-col gap-[3rem] md:gap-[5rem] my-[2rem] md:my-[3rem]">
           <div className="flex flex-col md:flex-row items-center gap-[1rem] bg-[#f7f7f7ff] md:bg-transparent p-[1rem] rounded-lg">
             <div className="md:flex-1 text-center md:text-left flex flex-col gap-[1rem] md:p-[1rem]">
-              <h4 className="uppercase font-bold text-[1.5rem] md:text-[2rem]">
+              <h4 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem]">
                 Acampe
               </h4>
-              <p className="text-[.8rem] md:text-[1rem]">
+              <p className="text-[.8rem] md:text-[1rem] text-justify">
                 El Parque ofrece acampe libre, gratuito y agreste en las áreas
                 La Cañada y Pampa Pajosa.
                 <br />
@@ -160,10 +160,10 @@ const Info = () => {
 
           <div className="flex flex-col md:flex-row items-center gap-[1rem] bg-[#f7f7f7ff] md:bg-transparent p-[1rem] rounded-lg">
             <div className="md:flex-1 text-center md:text-left flex flex-col gap-[1rem] md:p-[1rem] order-1 md:order-2">
-              <h4 className="uppercase font-bold text-[1.5rem] md:text-[2rem]">
+              <h4 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem]">
                 Pesca
               </h4>
-              <p className="text-[.8rem] md:text-[1rem]">
+              <p className="text-[.8rem] md:text-[1rem] text-justify">
                 La temporada de pesca se extiende desde el 28 de octubre de 2022
                 hasta el 28 de mayo de 2023. Sólo se puede pescar en temporada
                 con <span className="font-bold">permiso</span>, gestionado por
@@ -182,10 +182,10 @@ const Info = () => {
 
           <div className="flex flex-col md:flex-row items-center gap-[1rem] bg-[#f7f7f7ff] md:bg-transparent p-[1rem] rounded-lg">
             <div className="md:flex-1 text-center md:text-left flex flex-col gap-[1rem] md:p-[1rem]">
-              <h4 className="uppercase font-bold text-[1.5rem] md:text-[2rem]">
+              <h4 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem]">
                 Visitas Nocturnas
               </h4>
-              <p className="text-[.8rem] md:text-[1rem]">
+              <p className="text-[.8rem] md:text-[1rem] text-justify">
                 Se realizan de lunes a domingos, únicamente mediante la
                 contratación de{" "}
                 <span className="font-bold">guías habilitados</span> (incluye
@@ -204,10 +204,10 @@ const Info = () => {
 
           <div className="flex flex-col md:flex-row items-center gap-[1rem] bg-[#f7f7f7ff] md:bg-transparent p-[1rem] rounded-lg">
             <div className="md:flex-1 text-center md:text-left flex flex-col gap-[1rem] md:p-[1rem] order-1 md:order-2">
-              <h4 className="uppercase font-bold text-[1.5rem] md:text-[2rem]">
+              <h4 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem]">
                 Bicicletas
               </h4>
-              <p className="text-[.8rem] md:text-[1rem]">
+              <p className="text-[.8rem] md:text-[1rem] text-justify">
                 Sólo está habilitado en{" "}
                 <span className="font-bold">caminos vehiculares 2 y 7.</span> No
                 se permite el ingreso con bicicletas en el sendero que va a la
@@ -226,11 +226,11 @@ const Info = () => {
         </div>
 
         <div className="max-w-[900px] mx-auto pb-[2rem] md:pb-[3rem]">
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] mt-[2rem] md:mt-[3rem] font-bold">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Residuos
           </h3>
 
-          <p className="text-[.8rem] md:text-[1rem]">
+          <p className="text-[.8rem] md:text-[1rem] text-justify">
             Llevá siempre una bolsa (en lo posible color oscuro, no
             transparente) para ir dejando allí los residuos generados durante tu
             visita, incluyendo papel higiénico, pañales o apósitos femeninos,
@@ -241,7 +241,7 @@ const Info = () => {
             </span>
           </p>
 
-          <h3 className="uppercase text-[1.5rem] md:text-[2rem] mt-[2rem] md:mt-[3rem] mb-[2rem] md:mb-[3rem] font-bold">
+          <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">
             Más información de interés
           </h3>
 

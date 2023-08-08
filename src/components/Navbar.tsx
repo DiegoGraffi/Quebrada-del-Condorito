@@ -47,17 +47,17 @@ const Navbar = () => {
                 Actividades
               </li>
             </Link>
-            <Link href="/#professionals">
+            <Link href="/ecosistema">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Ecosistema
               </li>
             </Link>
-            <Link href="/#contact">
+            <Link href="/legal">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Legal
               </li>
             </Link>
-            <Link href="/#contact">
+            <Link href="/informacion">
               <li className="text-[14px] hover:text-verde border-b border-b-transparent hover:border-b-verde transition-all duration-300 ease-in-out">
                 Información
               </li>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 </li>
               </Link>
               <Link
-                href="/#professionals"
+                href="/ecosistema"
                 className="flex justify-center border-b-[1px] border-black pb-3 border-opacity-50"
               >
                 <li className="font-raleway font-[400] text-grisAzul">
@@ -119,13 +119,16 @@ const Navbar = () => {
               </Link>
 
               <Link
-                href="/#contact"
+                href="/legal"
                 className="flex justify-center border-b-[1px] border-black pb-3 border-opacity-50"
               >
                 <li className="font-raleway font-[400] text-grisAzul">Legal</li>
               </Link>
 
-              <Link href="/#contact" className="flex justify-center mb-[15px]">
+              <Link
+                href="/informacion"
+                className="flex justify-center mb-[15px]"
+              >
                 <li className="font-raleway font-[400] text-grisAzul">
                   Información
                 </li>

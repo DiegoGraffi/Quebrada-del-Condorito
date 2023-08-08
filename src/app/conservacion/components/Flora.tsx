@@ -28,7 +28,7 @@ const Flora = () => {
 
   return (
     <section>
-      <div className="max-w-[600px] mx-auto text-center mt-[3rem] md:mt-[5rem] px-[25px]">
+      <div className="max-w-[600px] mx-auto text-justify md:text-center mt-[3rem] md:mt-[5rem] px-[25px]">
         <h3 className="uppercase text-[1rem] md:text-[1.5rem] mb-[3rem] md:mb-[5rem] font-bold">
           Flora
         </h3>
