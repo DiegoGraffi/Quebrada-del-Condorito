@@ -8,10 +8,11 @@ import pesca from "../../../../public/images/pesca.jpg";
 import visitas from "../../../../public/images/noche.jpg";
 import bicicletas from "../../../../public/images/bicicleta.jpg";
 import banner from "../../../../public/images/banner.jpg";
+import Link from "next/link";
 
 const Info = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className=" mt-[3rem] md:mt-[5rem] px-[25px]">
         <div className="max-w-[900px] mx-auto">
           <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] font-bold">
@@ -36,11 +37,13 @@ const Info = () => {
             <li>De 8 a 20 horas.</li>
           </ul>
 
-          <button className="group p-[1.5rem] border-2 border-black w-full mt-[2rem] hover:bg-black transition-all duration-200 ease-in-out">
-            <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
-              Mapa del área protegida
-            </p>
-          </button>
+          <Link href="../../mapa">
+            <button className="group p-[1.5rem] border-2 border-black w-full mt-[2rem] hover:bg-black transition-all duration-200 ease-in-out">
+              <p className="uppercase font-bold group-hover:text-white transition-all duration-200 ease-in-out">
+                Mapa del área protegida
+              </p>
+            </button>
+          </Link>
 
           <h3 className="uppercase text-[1.5rem] md:text-[2rem] mb-[2rem] md:mb-[3rem] font-bold mt-[2rem] md:mt-[3rem]">
             Sitios para visitar y actividades
@@ -289,7 +292,7 @@ const Info = () => {
         </div>
       </div>
 
-      <div className="w-screen h-[300px] md:h-[550px] relative">
+      <div className="w-[100vw] h-[300px] md:h-[550px] relative">
         <div className="absolute w-full h-full bg-black opacity-20"></div>
         <Image
           src={banner}
