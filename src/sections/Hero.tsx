@@ -11,7 +11,7 @@ const Hero = () => {
         <p className="text-white uppercase text-center text-[.8rem] lg:text-[1rem] font-[400] pt-10">
           Un encuentro con los condores
         </p>
-        <p className="text-white uppercase text-center text-[.8rem] lg:text-[1rem] font-[400] pt-5">
+        <p className="text-white uppercase text-center text-[.8rem] lg:text-[1rem] font-[400] p-3 bg-verde mt-2 hover:bg-black transition-all duration-200 ease-in-out">
           Sitio web no oficial
         </p>
       </div>
