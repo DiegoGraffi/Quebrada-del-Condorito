@@ -3,7 +3,7 @@ import { documentos } from "../../../constants/legal";
 
 const Info = () => {
   return (
-    <section>
+    <section id="info-legal">
       <div className=" max-w-[1000px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full px-[25px] gap-[1rem] items-center my-[3rem]">
         {documentos.map((body, index) => (
           <LegalCard nombre={body.nombre} link={body.link} />

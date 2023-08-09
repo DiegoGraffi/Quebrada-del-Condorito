@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <section>
+    <section id="info-informacion">
       <div className="max-w-[600px] mx-auto text-justify md:text-center mt-[3rem] md:mt-[5rem] px-[25px]">
         <h3 className="uppercase text-[1rem] md:text-[1.5rem] mb-[3rem] font-bold">
           Registros

@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <section className="overflow-hidden">
+    <section id="info-actividades" className="overflow-hidden">
       <div className=" mt-[3rem] md:mt-[5rem] px-[25px]">
         <div className="max-w-[900px] mx-auto">
           <h3 className="uppercase text-[1rem] md:text-[1.5rem] font-bold my-[1rem] mt-[3rem] md:mt-[4rem]">

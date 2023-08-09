@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Fondo from "../../../../public/images/info-edit.jpg";
 import { IoChevronDownSharp } from "react-icons/io5";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -9,10 +10,11 @@ const Hero = () => {
         <h1 className="text-white text-center uppercase text-[2rem] lg:text-[5rem] max-w-[50rem] font-[700] pb-10 ">
           Información y Registros
         </h1>
-
-        <div className="bg-white rounded-full p-2 hover:scale-110 hover:bg-verde hover:text-white transition ease-in-out duration-200 cursor-pointer translate-y-20">
-          <IoChevronDownSharp size={30} />
-        </div>
+        <Link href="informacion/#info-informacion">
+          <div className="bg-white rounded-full p-2 hover:scale-110 hover:bg-verde hover:text-white transition ease-in-out duration-200 cursor-pointer translate-y-20">
+            <IoChevronDownSharp size={30} />
+          </div>
+        </Link>
       </div>
       <div className="h-[100vh] ">
         <div className="bg-black w-[100%] h-full absolute z-20 opacity-40 left-0"></div>

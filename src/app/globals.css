@@ -6,6 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-padding-top: 85px;
+}
+
+html {
+  scroll-behavior: smooth !important;
 }
 
 ::selection {
