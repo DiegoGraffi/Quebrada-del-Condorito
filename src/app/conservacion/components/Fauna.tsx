@@ -2,32 +2,25 @@
 
 import React from "react";
 import Image from "next/image";
-import Swiper from "react-id-swiper";
-import "swiper/css";
-import Image1 from "../../../../public/images/fauna/1.jpg";
-import Image2 from "../../../../public/images/fauna/2.jpg";
-import Image3 from "../../../../public/images/fauna/3.jpg";
-import Image4 from "../../../../public/images/fauna/4.jpg";
-import Image5 from "../../../../public/images/fauna/5.jpg";
-import Image6 from "../../../../public/images/fauna/6.jpg";
-import Image7 from "../../../../public/images/fauna/7.jpg";
-import Image8 from "../../../../public/images/fauna/8.jpg";
+import photo1 from "@/Images/fauna/1fauna.jpg";
+import photo2 from "@/Images/fauna/2fauna.jpg";
+import photo3 from "@/Images/fauna/3fauna.jpg";
+import photo4 from "@/Images/fauna/4fauna.jpg";
+import photo5 from "@/Images/fauna/5fauna.jpg";
+import photo6 from "@/Images/fauna/6fauna.jpg";
+import photo7 from "@/Images/fauna/7fauna.jpg";
+import photo8 from "@/Images/fauna/8fauna.jpg";
+
+import "photoswipe/dist/photoswipe.css";
+
+import { Gallery, Item } from "react-photoswipe-gallery";
+
+const options = {
+  bgOpacity: 0.9,
+  padding: { top: 20, bottom: 20, left: 20, right: 20 },
+};
 
 const Fauna = () => {
-  const params = {
-    slidesPerView: 3,
-    spaceBetween: 1,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
-
   return (
     <section>
       <div className="max-w-[600px] mx-auto text-justify md:text-center mt-[3rem] md:mt-[5rem] px-[25px]">
@@ -65,66 +58,169 @@ const Fauna = () => {
         </p>
       </div>
 
-      <div className="px-[25px] overflow-hidden h-auto">
-        <Swiper {...params}>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image1}
-              alt="foto"
-            />
+      <Gallery withDownloadButton options={options}>
+        <div className="grid grid-cols-3 grid-rows-2 gap-[12px] max-w-[1200px] mx-auto px-[25px]">
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo1.src}
+              thumbnail={photo1.src}
+              width="1408"
+              height="1056"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo1.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image2}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo2.src}
+              thumbnail={photo2.src}
+              width="1280"
+              height="960"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo2.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image3}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo3.src}
+              thumbnail={photo3.src}
+              width="1280"
+              height="960"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo3.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image4}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo4.src}
+              thumbnail={photo4.src}
+              width="5456"
+              height="3064"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo4.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image5}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo5.src}
+              thumbnail={photo5.src}
+              width="5456"
+              height="3064"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo5.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image6}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo6.src}
+              thumbnail={photo6.src}
+              width="5456"
+              height="3064"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo6.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image7}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo7.src}
+              thumbnail={photo7.src}
+              width="944"
+              height="708"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo7.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image8}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo8.src}
+              thumbnail={photo8.src}
+              width="894"
+              height="894"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo8.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-        </Swiper>
-      </div>
+        </div>
+      </Gallery>
     </section>
   );
 };

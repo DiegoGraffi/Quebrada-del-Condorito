@@ -2,30 +2,23 @@
 
 import React from "react";
 import Image from "next/image";
-import Swiper from "react-id-swiper";
-import "swiper/css";
-import Image1 from "../../../../public/images/flora/1.jpg";
-import Image2 from "../../../../public/images/flora/2.jpg";
-import Image3 from "../../../../public/images/flora/3.jpg";
-import Image4 from "../../../../public/images/flora/4.jpg";
-import Image5 from "../../../../public/images/flora/5.jpg";
-import Image6 from "../../../../public/images/flora/6.jpg";
+import photo1 from "@/Images/flora/1.jpg";
+import photo2 from "@/Images/flora/2.jpg";
+import photo3 from "@/Images/flora/3.jpg";
+import photo4 from "@/Images/flora/4.jpg";
+import photo5 from "@/Images/flora/5.jpg";
+import photo6 from "@/Images/flora/6.jpg";
+
+import "photoswipe/dist/photoswipe.css";
+
+import { Gallery, Item } from "react-photoswipe-gallery";
+
+const options = {
+  bgOpacity: 0.9,
+  padding: { top: 20, bottom: 20, left: 20, right: 20 },
+};
 
 const Flora = () => {
-  const params = {
-    slidesPerView: 3,
-    spaceBetween: 1,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
-
   return (
     <section id="info-conservacion">
       <div className="max-w-[600px] mx-auto text-justify md:text-center mt-[3rem] md:mt-[5rem] px-[25px]">
@@ -56,52 +49,129 @@ const Flora = () => {
         </p>
       </div>
 
-      <div className="px-[25px] overflow-hidden ">
-        <Swiper {...params}>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image1}
-              alt="foto"
-            />
+      <Gallery withDownloadButton options={options}>
+        <div className="grid grid-cols-3 grid-rows-2 gap-[12px] max-w-[1200px] mx-auto px-[25px]">
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo1.src}
+              thumbnail={photo1.src}
+              width="1240"
+              height="1332"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo1.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image2}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo2.src}
+              thumbnail={photo2.src}
+              width="1544"
+              height="790"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo2.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image3}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo3.src}
+              thumbnail={photo3.src}
+              width="1632"
+              height="1000"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo3.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image4}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo4.src}
+              thumbnail={photo4.src}
+              width="2000"
+              height="1336"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo4.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image5}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo5.src}
+              thumbnail={photo5.src}
+              width="934"
+              height="934"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo5.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-          <div>
-            <Image
-              className="aspect-square object-cover w-full h-full"
-              src={Image6}
-              alt="foto"
-            />
+
+          <div className="relative w-full h-[150px] md:h-[300px]">
+            <Item
+              original={photo6.src}
+              thumbnail={photo6.src}
+              width="1618"
+              height="1080"
+            >
+              {({ ref, open }) => (
+                <Image
+                  // @ts-ignore
+                  ref={ref}
+                  onClick={open}
+                  src={photo6.src}
+                  fill
+                  className="object-cover"
+                />
+              )}
+            </Item>
           </div>
-        </Swiper>
-      </div>
+        </div>
+      </Gallery>
     </section>
   );
 };
